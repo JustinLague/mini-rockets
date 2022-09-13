@@ -15,9 +15,9 @@ temperature => 4 bytes
 
 temps en ms => 4 bytes
 id du fichier => 2 bytes
- 
+
   id        ms        aX        aY          aZ          vX          vY          vZ          pr          al          te
-0 - 15 | 16 - 47 | 48 - 79 | 80 - 111 | 112 - 143 | 144 - 175 | 176 - 207 | 208 - 239 | 240 - 271 | 272 - 303 | 304 - 335 | 
+0 - 15 | 16 - 47 | 48 - 79 | 80 - 111 | 112 - 143 | 144 - 175 | 176 - 207 | 208 - 239 | 240 - 271 | 272 - 303 | 304 - 335 |
 
 2B   4B   4B   4B   4B   4B   4B   4B   4B   4B   4B
 id | ms | aX | aY | aZ | vX | vY | vZ | pr | al | te
