@@ -1,0 +1,26 @@
+MCU:
+	STM32F405RTG6: https://pdf1.alldatasheet.com/datasheet-pdf/view/510007/STMICROELECTRONICS/STM32F405RGT6.html
+
+Memory:
+	SST25VF512A-33-4C-SAE: https://www.digikey.com/en/products/detail/microchip-technology/SST25VF512A-33-4C-SAE/2297812
+
+Altimetre:
+	MS5607-02BA03: https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5607-02BA03&DocType=Data+Sheet&DocLang=English
+
+Geroscope, accelerometre, temperature:
+	LSM6DS3: https://www.st.com/resource/en/datasheet/lsm6dso.pdf
+
+Battery port: 
+	1716020000: https://www.digikey.com/en/products/detail/weidm%C3%BCller/1716020000/269780
+
+Buck: 
+	ADP2303ARDZ-3.3-R7: https://www.digikey.ca/en/products/detail/analog-devices-inc/ADP2303ARDZ-3-3-R7/2606545
+
+Programmeur port: 
+	GRPB052MWCN-RC: https://www.digikey.ca/en/products/detail/sullins-connector-solutions/GRPB052MWCN-RC/1786482?s=N4IgTCBcDaIMoE4AMBGA7AUQLRIKxYDkAREAXQF8g
+
+Reset Switch:
+	MJTP1117: https://www.digikey.com/en/products/detail/apem-inc/MJTP1117/1795496
+
+USB Connector:
+	USB4085-GF-A: https://www.digikey.com/en/products/detail/gct/USB4085-GF-A/9859662
