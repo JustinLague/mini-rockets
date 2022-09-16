@@ -22,5 +22,21 @@ Programmeur port:
 Reset Switch:
 	MJTP1117: https://www.digikey.com/en/products/detail/apem-inc/MJTP1117/1795496
 
-USB Connector:
-	USB4085-GF-A: https://www.digikey.com/en/products/detail/gct/USB4085-GF-A/9859662
+FTDI ou Staight up usb dans le port stm32
+
+DP => Data plus
+DM => Data moins
+Half-duplex => USB
+
+toujours a la meme distance pour la pair differientiel
+
+impedence USB => 80 
+
+ESD plus proche du connecteur USB                           
+ESD -> 1 pin au 3.3v -> 2 D+ D_
+
+Breakout signal = close to 5v
+
+diode en serie juste avant le capa du buck, plus proche du connecteur de la batterie, pour ne pas brancher alenvers
+
+fuse 4 amp, courant nominal +20%, courant nominal = amperage de la batterie.

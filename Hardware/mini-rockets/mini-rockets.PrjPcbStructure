@@ -1,7 +1,7 @@
-Record=TopLevelDocument|FileName=Altimiter_SCH.SchDoc|SheetNumber=5
-Record=NoMainPathDocument|SourceDocument=Altimiter_SCH.SchDoc|FileName=Connection_SCH.SchDoc|SheetNumber=6
-Record=NoMainPathDocument|SourceDocument=Altimiter_SCH.SchDoc|FileName=Ejection_SCH.SchDoc|SheetNumber=7
-Record=NoMainPathDocument|SourceDocument=Altimiter_SCH.SchDoc|FileName=MCU_SCH.SchDoc|SheetNumber=2
-Record=NoMainPathDocument|SourceDocument=Altimiter_SCH.SchDoc|FileName=Memory_SCH.SchDoc|SheetNumber=4
-Record=NoMainPathDocument|SourceDocument=Altimiter_SCH.SchDoc|FileName=PCU_SCH.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=Altimiter_SCH.SchDoc|FileName=TopLevel.SchDoc|SheetNumber=1
+Record=TopLevelDocument|FileName=TopLevel.SchDoc|SheetNumber=1
+Record=SheetSymbol|SourceDocument=TopLevel.SchDoc|Designator=U_Altimiter_SCH|SchDesignator=U_Altimiter_SCH|FileName=Altimiter_SCH.SchDoc|SheetNumber=5|SymbolType=Normal|RawFileName=Altimiter_SCH.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TopLevel.SchDoc|Designator=U_Connection_SCH|SchDesignator=U_Connection_SCH|FileName=Connection_SCH.SchDoc|SheetNumber=6|SymbolType=Normal|RawFileName=Connection_SCH.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TopLevel.SchDoc|Designator=U_Ejection_SCH|SchDesignator=U_Ejection_SCH|FileName=Ejection_SCH.SchDoc|SheetNumber=7|SymbolType=Normal|RawFileName=Ejection_SCH.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TopLevel.SchDoc|Designator=U_MCU_SCH|SchDesignator=U_MCU_SCH|FileName=MCU_SCH.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=MCU_SCH.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TopLevel.SchDoc|Designator=U_Memory_SCH|SchDesignator=U_Memory_SCH|FileName=Memory_SCH.SchDoc|SheetNumber=4|SymbolType=Normal|RawFileName=Memory_SCH.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TopLevel.SchDoc|Designator=U_PCU_SCH|SchDesignator=U_PCU_SCH|FileName=PCU_SCH.SchDoc|SheetNumber=3|SymbolType=Normal|RawFileName=PCU_SCH.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
