@@ -1,0 +1,7 @@
+Diode PCU pour proteger contres les con (moi) qui inverse la batterie
+
+USART du programming port
+
+USB Connector
+
+Faire toute les rules de altium

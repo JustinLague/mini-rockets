@@ -10,6 +10,8 @@ Altimetre:
 Geroscope, accelerometre, temperature:
 	LSM6DS3: https://www.st.com/resource/en/datasheet/lsm6dso.pdf
 
+	https://www.digikey.ca/en/products/detail/stmicroelectronics/LSM6DSLTR/6192804
+
 Battery port: 
 	1716020000: https://www.digikey.com/en/products/detail/weidm%C3%BCller/1716020000/269780
 
@@ -21,8 +23,6 @@ Programmeur port:
 
 Reset Switch:
 	MJTP1117: https://www.digikey.com/en/products/detail/apem-inc/MJTP1117/1795496
-
-FTDI ou Staight up usb dans le port stm32
 
 DP => Data plus
 DM => Data moins
