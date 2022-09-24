@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=SENSE_2 Pin=U1-58
+Removed Pin From Net: NetName=SENSE_1 Pin=U1-59
+Removed Pin From Net: NetName=FIRE_2 Pin=U1-61
+Removed Pin From Net: NetName=FIRE_1 Pin=U1-62
+Added Pin To Net: NetName=BUZZER Pin=U1-50
+Added Pin To Net: NetName=SENSE_2 Pin=U1-51
+Added Pin To Net: NetName=FIRE_2 Pin=U1-52
+Added Pin To Net: NetName=SENSE_1 Pin=U1-53
+Added Pin To Net: NetName=FIRE_1 Pin=U1-54

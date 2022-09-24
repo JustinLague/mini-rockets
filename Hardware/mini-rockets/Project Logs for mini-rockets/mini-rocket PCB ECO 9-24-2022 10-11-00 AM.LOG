@@ -1,0 +1,21 @@
+Added Component: Designator=LS1(XDCR_AT-1224-TWT-12V-2-R)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/AT-1224-TWT-12V-2-R/PUI%20Audio,%20Inc./view-part/3215877/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "PUI Audio,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "AT-1224-TWT-12V-2-R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "PUI Audio,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/AT-1224-TWT-12V-2-R/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/AT-1224-TWT-12V-2-R/PUI%20Audio,%20Inc./view-part/3215877/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetLS1_N Pin=LS1-N
+Added Pin To Net: NetName=VBATT_CONTROLLED Pin=LS1-P
+Added Member To Class: ClassName=U_Ejection_SCH Member=Component LS1 AT-1224-TWT-12V-2-R
+Added Room: Name=U_Altimiter_SCH
+Added Room: Name=U_Connection_SCH
+Added Room: Name=U_Ejection_SCH
+Added Room: Name=U_IMU_SCH
+Added Room: Name=U_MCU_SCH
+Added Room: Name=U_Memory_SCH
+Added Room: Name=U_PCU_SCH
+Added Room: Name=U_USB_SCH

@@ -1,0 +1,49 @@
+Removed Member From Class: ClassName=50_Ohm Member=NetR24_2
+Removed Member From Class: ClassName=50_Ohm Member=NetR25_2
+Removed Member From Class: ClassName=50_Ohm Member=NetU1_10
+Removed Member From Class: ClassName=50_Ohm Member=NetU1_11
+Removed Member From Class: ClassName=50_Ohm Member=NetU1_17
+Removed Member From Class: ClassName=50_Ohm Member=NetU1_20
+Removed Member From Class: ClassName=50_Ohm Member=NetU1_23
+Removed Member From Class: ClassName=50_Ohm Member=NetU1_24
+Removed Member From Class: ClassName=50_Ohm Member=NetU1_25
+Removed Member From Class: ClassName=50_Ohm Member=NetU1_29
+Removed Member From Class: ClassName=50_Ohm Member=NetU1_30
+Removed Member From Class: ClassName=50_Ohm Member=NetU1_34
+Removed Member From Class: ClassName=50_Ohm Member=NetU1_35
+Change Net Name : Old Net Name=NetQ1_1 New Net Name=FIRE_1
+Change Net Name : Old Net Name=NetQ2_3 New Net Name=SENSE_1
+Change Net Name : Old Net Name=NetQ3_1 New Net Name=FIRE_2
+Change Net Name : Old Net Name=NetQ4_3 New Net Name=SENSE_2
+Change Net Name : Old Net Name=NetQ5_1 New Net Name=BUZZER
+Change Net Name : Old Net Name=NetR24_2 New Net Name=SPI1_MISO
+Change Net Name : Old Net Name=NetR25_2 New Net Name=SPI1_SCK
+Change Net Name : Old Net Name=NetU1_17 New Net Name=SPI1_CS
+Change Net Name : Old Net Name=NetU1_20 New Net Name=SPI1_CS
+Change Net Name : Old Net Name=NetU1_23 New Net Name=SPI1_MOSI
+Change Net Name : Old Net Name=NetU1_24 New Net Name=INT1
+Change Net Name : Old Net Name=NetU1_25 New Net Name=INT2
+Change Net Name : Old Net Name=NetU1_29 New Net Name=SPI2_SCK
+Change Net Name : Old Net Name=NetU1_34 New Net Name=WP
+Change Net Name : Old Net Name=NetU1_35 New Net Name=HOLD
+Added Pin To Net: NetName=SPI2_CS Pin=U1-30
+Added Pin To Net: NetName=SPI2_CS Pin=U4-1
+Added Net: Name=SPI2_CS
+Added Pin To Net: NetName=SPI2_MISO Pin=U1-10
+Added Pin To Net: NetName=SPI2_MISO Pin=U4-2
+Added Net: Name=SPI2_MISO
+Added Pin To Net: NetName=SPI2_MOSI Pin=U1-11
+Added Pin To Net: NetName=SPI2_MOSI Pin=U4-5
+Added Net: Name=SPI2_MOSI
+Added Member To Class: ClassName=50_Ohm Member=Wire HOLD
+Added Member To Class: ClassName=50_Ohm Member=Wire INT1
+Added Member To Class: ClassName=50_Ohm Member=Wire INT2
+Added Member To Class: ClassName=50_Ohm Member=Wire SPI1_CS
+Added Member To Class: ClassName=50_Ohm Member=Wire SPI1_MISO
+Added Member To Class: ClassName=50_Ohm Member=Wire SPI1_MOSI
+Added Member To Class: ClassName=50_Ohm Member=Wire SPI1_SCK
+Added Member To Class: ClassName=50_Ohm Member=Wire SPI2_CS
+Added Member To Class: ClassName=50_Ohm Member=Wire SPI2_MISO
+Added Member To Class: ClassName=50_Ohm Member=Wire SPI2_MOSI
+Added Member To Class: ClassName=50_Ohm Member=Wire SPI2_SCK
+Added Member To Class: ClassName=50_Ohm Member=Wire WP

@@ -1,0 +1,10 @@
+Change Net Name : Old Net Name=NetC10_2 New Net Name=VIN
+Change Net Name : Old Net Name=NetR13_2 New Net Name=PGOOD
+Added Room: Name=U_Altimiter_SCH
+Added Room: Name=U_Connection_SCH
+Added Room: Name=U_Ejection_SCH
+Added Room: Name=U_IMU_SCH
+Added Room: Name=U_MCU_SCH
+Added Room: Name=U_Memory_SCH
+Added Room: Name=U_PCU_SCH
+Added Room: Name=U_USB_SCH

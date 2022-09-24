@@ -1,0 +1,8 @@
+Removed Member From Class: ClassName=50_Ohm Member=SPI1_CS
+Change Net Name : Old Net Name=SPI1_CS New Net Name=SPI1_CS_ALTIMITER
+Change Net Color : Old Net Color=Aqua New Net Color=RGB(60, 120, 216)
+Added Pin To Net: NetName=SPI1_CS_IMU Pin=U1-20
+Added Pin To Net: NetName=SPI1_CS_IMU Pin=U6-12
+Added Net: Name=SPI1_CS_IMU
+Added Member To Class: ClassName=50_Ohm Member=Wire SPI1_CS_ALTIMITER
+Added Member To Class: ClassName=50_Ohm Member=Wire SPI1_CS_IMU

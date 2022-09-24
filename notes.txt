@@ -30,7 +30,7 @@ Half-duplex => USB
 
 toujours a la meme distance pour la pair differientiel
 
-impedence USB => 80 
+impedence USB => 90 Ohm 
 
 ESD plus proche du connecteur USB                           
 ESD -> 1 pin au 3.3v -> 2 D+ D_
@@ -40,3 +40,71 @@ Breakout signal = close to 5v
 diode en serie juste avant le capa du buck, plus proche du connecteur de la batterie, pour ne pas brancher alenvers
 
 fuse 4 amp, courant nominal +20%, courant nominal = amperage de la batterie.
+
+
+
+
+
+
+
+
+
+
+
+SPI1_CS_IMU
+SPI1_CS_Altimiter
+
+SPI2_CS_Memory
+
+
+changer le capa 10uf de 50v a 16v (lui du pcu)
+
+
+
+checker le buck et bas courant, pcq ca se peut que ca soit de la marde
+
+faire bilan des puissances
+
+fil spi doit avoir 50 ohm (clock, mosi, miso)
+
+stop check room
+
+vert == probleme
+
+
+layer 3 => routing the puissance
+
+layer 2 => gound
+
+trouver la grosseur du via min max sur le site pcb RoutingVias dans les rules
+
+manifacturing et placement dans le site pcb
+
+couleur sur les nets
+
+shift + hover sur un nets => sur les nets (pcb) montre ce qui est connecter sur le net (fil)
+
+ctlr + click sur pad => highlight le net label plus trace
+
+shift + c => clear filter
+
+* => passe sur l'autre layer de cuivre
+
+Shift + s => single layer view
+
+click sur fil + tab => selectionne tout le fil au complet
+
+name nets
+
+faire des tits tats de pieces ca l'aide pour faire le pre placement
+
+
+tout sur le top sauf quand tu as pas le choix sur le bottom
+
+faire des coins rond
+
+symbole avec un footprint 
+
+
+Mettre le nom sur le pcb (J'ai le droit) Avec un easter egg de plouffe (le truc de la flash light qui laisse passer la lumiere2)
+"J'ai dloua" - Plouffe

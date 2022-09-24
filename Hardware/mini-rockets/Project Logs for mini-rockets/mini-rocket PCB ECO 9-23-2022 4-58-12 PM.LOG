@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=NetU1_30 Pin=U4-1
+Removed Pin From Net: NetName=NetU1_10 Pin=U4-2
+Removed Pin From Net: NetName=NetU1_11 Pin=U4-5
+Added Pin To Net: NetName=NetU1_10 Pin=U4-1
+Added Pin To Net: NetName=NetU1_11 Pin=U4-2
+Added Pin To Net: NetName=NetU1_30 Pin=U4-5
+Change Net Name : Old Net Name=3V3 New Net Name=FB
+Change Net Name : Old Net Name=NetC7_2 New Net Name=VDDA
+Change Net Name : Old Net Name=NetC11_1 New Net Name=SW
+Change Net Name : Old Net Name=NetC11_2 New Net Name=BST
+Change Net Name : Old Net Name=NetR14_1 New Net Name=EN
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Blue
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Blue
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Blue
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Blue

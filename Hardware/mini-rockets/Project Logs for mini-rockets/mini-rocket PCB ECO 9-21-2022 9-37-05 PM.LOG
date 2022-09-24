@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=NetU1_33 Pin=U4-1
+Removed Pin From Net: NetName=NetU1_20 Pin=U5-4
+Removed Pin From Net: NetName=NetU1_20 Pin=U5-5
+Removed Pin From Net: NetName=NetU1_20 Pin=U6-12
+Added Pin To Net: NetName=V_BATT Pin=D6-A
+Change Net Name : Old Net Name=NetD8_1 New Net Name=D_P
+Change Net Name : Old Net Name=NetD8_2 New Net Name=D_N
+Change Net Name : Old Net Name=V_BATT New Net Name=VBATT
+Added Pin To Net: NetName=NetU4_1 Pin=U4-1
+Added Net: Name=NetU4_1
+Added Pin To Net: NetName=NetU5_4 Pin=U5-4
+Added Pin To Net: NetName=NetU5_4 Pin=U5-5
+Added Net: Name=NetU5_4
+Added Pin To Net: NetName=NetU6_12 Pin=U6-12
+Added Net: Name=NetU6_12
+Added Class: Name=50_Ohm
+Added Differential Pair: Name=D
+Added Room: Name=U_Altimiter_SCH
+Added Room: Name=U_Connection_SCH
+Added Room: Name=U_Ejection_SCH
+Added Room: Name=U_IMU_SCH
+Added Room: Name=U_MCU_SCH
+Added Room: Name=U_Memory_SCH
+Added Room: Name=U_PCU_SCH
+Added Room: Name=U_USB_SCH
+Added Class: Name=90_Ohm

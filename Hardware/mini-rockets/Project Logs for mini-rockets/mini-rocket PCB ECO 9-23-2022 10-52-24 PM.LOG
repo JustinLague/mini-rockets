@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=SPI1_CS Pin=U6-12
+Added Pin To Net: NetName=SPI1_CS Pin=U5-4
+Added Pin To Net: NetName=SPI1_CS Pin=U5-5
+Add Net: Net with name "SPI1_CS" already exists

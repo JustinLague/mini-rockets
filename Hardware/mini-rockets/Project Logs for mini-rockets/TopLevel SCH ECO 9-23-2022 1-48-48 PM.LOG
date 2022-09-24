@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=C10 Old Footprint=FP-CL21B106KOQNNNE-MFG New Footprint=C1210
+Change Component Comment: Designator=C10 Old Comment=CL21B106KOQNNNE New Comment=GRM32ER71H106KA12L
+Change Pin Designator/Name:  Old Designator=C10-1 Old Name=1 New Designator =2 New Name=2
+Change Pin Designator/Name:  Old Designator=C10-2 Old Name=2 New Designator =1 New Name=1

@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=WP Pin=U1-34
+Removed Pin From Net: NetName=HOLD Pin=U1-35
+Added Pin To Net: NetName=HOLD Pin=U1-34
+Added Pin To Net: NetName=WP Pin=U1-35
+Added Member To Class: ClassName=U_MCU_SCH Member=Component R3 470R
