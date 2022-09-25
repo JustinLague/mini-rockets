@@ -21,4 +21,6 @@ Changer le cube mx avec les bonnes pins IMPORTANT !!!!!
 
 Ajouter toutes les rules de le truc de pcb, changer les settings aussi pour que ca coute moins chere
 
+verifier l'epaisseur du board
+
 
