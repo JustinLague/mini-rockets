@@ -1,7 +1,18 @@
 import { Grid } from '@mui/material';
 import React, { useEffect } from 'react';
 import { Api } from '../services/api.service';
-import { LineChart, Line, XAxis, CartesianGrid, YAxis, Tooltip } from 'recharts';
+import { Line } from 'react-chartjs-2';
+import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from "chart.js";
+
+ChartJS.register(
+	CategoryScale,
+	LinearScale,
+	PointElement,
+	LineElement,
+	Title,
+	Tooltip,
+	Legend
+  );
 
 function GraphVitAcc() {
 	const [vitesse, setVitesse] = React.useState([]);
@@ -11,7 +22,7 @@ function GraphVitAcc() {
 	useEffect(() => {
 		var data = [];
 		for(var i = 0; i < 10000; i++) {
-			data.push({ms: i, v: i*10});
+			data.push(i*10);
 		}
 
 		setVitesse(data);
@@ -30,14 +41,25 @@ function GraphVitAcc() {
 				alignItems="center"
 				justifyContent="center"
 			>
-				<Grid item xs={3}>
-					<LineChart width={500} height={300} data={vitesse}>
-						<XAxis dataKey="ms"/>
-						<YAxis/>
-						<Tooltip />
-						<CartesianGrid stroke="#eee" strokeDasharray="5 5"/>
-						<Line type="monotone" dataKey="v" stroke="#8884d8" />
-					</LineChart>
+				<Grid item xs={12}>
+					<Line
+						datasetIdKey='id'
+						data={{
+							labels: ['Jun', 'Jul', 'Aug'],
+							datasets: [
+							{
+								id: 1,
+								label: '',
+								data: vitesse,
+							},
+							{
+								id: 2,
+								label: '',
+								data: [3, 2, 1],
+							},
+							],
+						}}
+					/>
 				</Grid>
 			</Grid>
 		</React.Fragment>
