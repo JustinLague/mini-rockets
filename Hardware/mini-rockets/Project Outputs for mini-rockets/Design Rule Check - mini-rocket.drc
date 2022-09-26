@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\user\Desktop\Workspace\mini-rockets\Hardware\mini-rockets\mini-rocket.PcbDoc
 Date     : 9/26/2022
-Time     : 2:51:21 PM
+Time     : 2:57:04 PM
 
 Processing Rule : Clearance Constraint (Gap=0.203mm) (All),(All)
 Rule Violations :0
@@ -10,8 +10,7 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net 3V3 Between Via (50.038mm,12.065mm) from Top Layer to Bottom Layer And Via (65.4mm,10.325mm) from Top Layer to Bottom Layer 
-Rule Violations :1
+Rule Violations :0
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
@@ -56,8 +55,6 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.203mm) (All),(All)
    Violation between Minimum Solder Mask Sliver Constraint: (0.051mm < 0.203mm) Between Pad J2-6(2.794mm,28.499mm) on Multi-Layer And Pad J2-8(2.794mm,29.769mm) on Multi-Layer [Top Solder] Mask Sliver [0.051mm] / [Bottom Solder] Mask Sliver [0.051mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.051mm < 0.203mm) Between Pad J2-7(4.064mm,29.769mm) on Multi-Layer And Pad J2-8(2.794mm,29.769mm) on Multi-Layer [Top Solder] Mask Sliver [0.051mm] / [Bottom Solder] Mask Sliver [0.051mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.051mm < 0.203mm) Between Pad J2-7(4.064mm,29.769mm) on Multi-Layer And Pad J2-9(4.064mm,31.039mm) on Multi-Layer [Top Solder] Mask Sliver [0.051mm] / [Bottom Solder] Mask Sliver [0.051mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.062mm < 0.203mm) Between Pad L7-1(65.4mm,11.65mm) on Top Layer And Via (65.4mm,10.325mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.062mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.012mm < 0.203mm) Between Pad L7-2(65.4mm,9.05mm) on Top Layer And Via (65.4mm,10.325mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.012mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.15mm < 0.203mm) Between Pad U3-2(51.239mm,51.308mm) on Top Layer And Pad U3-9(48.765mm,51.943mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.15mm < 0.203mm) Between Pad U3-3(51.239mm,52.578mm) on Top Layer And Pad U3-9(48.765mm,51.943mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.15mm < 0.203mm) Between Pad U3-6(46.291mm,52.578mm) on Top Layer And Pad U3-9(48.765mm,51.943mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]
@@ -77,7 +74,7 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.203mm) (All),(All)
    Violation between Minimum Solder Mask Sliver Constraint: (0.2mm < 0.203mm) Between Pad U6-7(44.347mm,6.723mm) on Top Layer And Pad U6-8(44.184mm,7.385mm) on Top Layer [Top Solder] Mask Sliver [0.2mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.15mm < 0.203mm) Between Pad U6-8(44.184mm,7.385mm) on Top Layer And Pad U6-9(43.684mm,7.385mm) on Top Layer [Top Solder] Mask Sliver [0.15mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.103mm < 0.203mm) Between Via (54.8mm,30.8mm) from Top Layer to Bottom Layer And Via (56.101mm,31.69mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.103mm] / [Bottom Solder] Mask Sliver [0.103mm]
-Rule Violations :39
+Rule Violations :37
 
 Processing Rule : Silk To Solder Mask (Clearance=0.203mm) (IsPad),(All)
    Violation between Silk To Solder Mask Clearance Constraint: (0.141mm < 0.203mm) Between Pad D1-A(78.994mm,4.318mm) on Top Layer And Track (78.364mm,3.318mm)(78.364mm,5.318mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.141mm]
@@ -160,13 +157,12 @@ Processing Rule : Silk to Silk (Clearance=0.203mm) (All),(All)
 Rule Violations :8
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
-   Violation between Net Antennae: Via (65.4mm,10.325mm) from Top Layer to Bottom Layer 
-Rule Violations :1
+Rule Violations :0
 
 Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
-Violations Detected : 115
+Violations Detected : 111
 Waived Violations : 0
-Time Elapsed        : 00:00:01
+Time Elapsed        : 00:00:02
