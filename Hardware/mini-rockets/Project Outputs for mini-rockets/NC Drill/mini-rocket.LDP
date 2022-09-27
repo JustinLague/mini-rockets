@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\user\Desktop\Workspace\mini-rockets\Hardware\mini-rockets\mini-rocket.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=mini-rocket-roundholes.txt|DrillLayers=gtl,g1,g2,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=mini-rocket-slotholes.txt|DrillLayers=gtl,g1,g2,gbl

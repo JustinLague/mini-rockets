@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [mini-rocket.PcbDoc]
+   Generated File[mini-rocket-RoundHoles.TXT]
+   Generated File[mini-rocket-SlotHoles.TXT]
+   Generated File[mini-rocket.LDP]
+   Generated File[mini-rocket.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 10:28:09 PM On 9/26/2022
