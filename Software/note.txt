@@ -1,0 +1,18 @@
+semaphore dans le truc de memory qui s'incremente a chaque fois que le timer termine (20ms)
+
+faire des mutex avec les valeurs du imu et du barometre 
+
+
+keep track of where we are in the memory 
+	
+	get the stating memory possition quand le mcu boot
+	WREN
+	CE = 0
+	AAI page 12 datasheet envoit 3 octets d'addresse et 2 octets de data, apres c'est juste la commande AD pis 2 octets de data CE descends lorsque le data a ete envoyer
+
+	
+IMU :
+
+	envoit des addresse pour lire dans les bons register
+
+	regarder la config pour s'assurer qu'on lit comme il faut

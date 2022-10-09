@@ -2,6 +2,7 @@
 #include "cmsis_os.h"
 #include <stdio.h>
 #include "SEGGER_RTT.h"
+#include "main.h"
 
 const osThreadAttr_t mainHeader_attr = {
   .priority = (osPriority_t) osPriorityNormal, //Set initial thread priority to high
@@ -10,13 +11,14 @@ const osThreadAttr_t mainHeader_attr = {
 
 
 void initMainTask() {
-	osThreadId_t main_id = osThreadNew(mainTask, NULL, &mainHeader_attr);
+	osThreadNew(mainTask, NULL, &mainHeader_attr);
 	SEGGER_RTT_WriteString(0, "Init main task\r\n");
 }
 
 __NO_RETURN void mainTask() {
 
 	while(1) {
-		osDelay(1000);
+		HAL_GPIO_TogglePin(LED_1_GPIO_Port, LED_1_Pin);
+		osDelay(500);
 	}
 }
