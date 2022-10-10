@@ -10,7 +10,7 @@ const osThreadAttr_t imuHeader_attr = {
 
 
 void initIMUTask(SPI_HandleTypeDef hspi1) {
-	osThreadId_t imu_id = osThreadNew(IMUTask, NULL, &imuHeader_attr);
+	osThreadNew(IMUTask, NULL, &imuHeader_attr);
 	SEGGER_RTT_WriteString(0, "Init imu task\r\n");
 }
 

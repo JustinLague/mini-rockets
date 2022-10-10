@@ -24,8 +24,11 @@ SUBDIRS := \
 App/Src \
 Core/Src \
 Core/Startup \
+Drivers/Arm_matrix \
 Drivers/Barometer \
+Drivers/Buffer \
 Drivers/IMU \
+Drivers/Kalman \
 Drivers/Memory \
 Drivers/RTT/SEGGER_RTT_V756b/RTT \
 Drivers/RTT/SEGGER_RTT_V756b/RTT/src \

@@ -1,0 +1,72 @@
+composant linear:
+
+RLC
+
+courbe X: tension (V)
+	   Y : Courant (A)
+
+composant non linear :
+
+pas mal tout le reste
+
+petit changement de Tension >>> courant 
+
+V=RI ne fonctionne pas 
+
+	faut faire une circuit equivalant lineaire
+
+
+LDO : low noise, pas efficace (Tension ++ -> Tension--)
+
+Buck : tension-- -> tension++
+
+Boost: tension-- -> tension++
+
+
+bobine opposer de condencateur
+
+
+Bobine marche en courant (magnetique) change la tension
+
+Condencateur marche en tension (electrique) change le courant
+
+
+entree mecanique = condencateur 
+
+truc de mcu boot option =
+
+	pull up : donne 1 ou 0 dependant de la resistance : https://ohmslawcalculator.com/voltage-divider-calculator
+
+selection filter is the key to win 
+
+Layer stack manager
+
+	mettre 2 et 3 en plane 
+
+4 couches typiques pour circuit numeriques
+
+	1 et 4 couche contiens les signaux de mcu resistance etc
+	2 ground
+	3 power (possibiliter d'avoir des iles de power genre 3v3 mcu et 3v3 imu et 5v, peut pas faire ca en plane)
+
+TC => trouver le fil / composant dans la vue 
+
+L dans la view pcb => voir les filtres des layers
+shift + c => clear
+
+shift + s => tu vois tout ce qui se passe dans la layer
+
+
+grossir un fil : pert moins de tension
+ 				 change l'inpedance 
+
+inpedance de 50 ohm
+
+saturn pcb => conductor properties 
+
+checker la grosseur de la ligne avec saturn conductor properties pour savoir si ca pas pogner en feu
+
+
+plan electrique du rasberypie 
+plan electrique du arduino uno
+plan electrique du beagle bone

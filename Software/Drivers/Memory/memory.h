@@ -24,10 +24,20 @@
 #define EBSY_CMD 				(uint8_t)0x70
 #define DBSY_CMD 				(uint8_t)0x80
 
+
+#define JUSTIN_ID 				(uint8_t)0xAA
 /******************************************************************************/
 /*                             Type  Prototype                                */
 /******************************************************************************/
+typedef struct {
+  GPIO_TypeDef *port;     /** GPIO port of chip select pin */
+  uint16_t pin;           /** GPIO pin for chip select */
+  SPI_HandleTypeDef *spi; /** SPI handle to use for communication */
 
+  uint8_t current_memory[3];    /** Keep track of where we are writing in the memory */
+
+  uint8_t initialized;
+} memory_t;
 
 /******************************************************************************/
 /*                             Global variable                                */
@@ -37,7 +47,14 @@
 /******************************************************************************/
 /*                             Function prototype                             */
 /******************************************************************************/
-void memory_init(GPIO_TypeDef* port, uint16_t pin, SPI_HandleTypeDef* spi);
-void send_command();
+void memory_init(memory_t* memory, GPIO_TypeDef* port, uint16_t pin, SPI_HandleTypeDef* spi);
+void finding_start_memory(memory_t* memory);
+
+void read_status_register(memory_t* memory);
+void write_enable(memory_t* memory);
+void auto_address_increment(memory_t* memory, uint8_t data[]);
+void write_disable(memory_t* memory);
+
+void increment_memory(memory_t* memory, uint32_t increment_counter);
 
 #endif /* MEMORY_H_ */

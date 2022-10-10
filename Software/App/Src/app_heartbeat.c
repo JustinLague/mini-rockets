@@ -10,7 +10,7 @@ const osThreadAttr_t heartbeatHeader_attr = {
 
 
 void initHeartbeatTask() {
-	osThreadId_t heartbeat_id = osThreadNew(heartbeatTask, NULL, &heartbeatHeader_attr);
+	osThreadNew(heartbeatTask, NULL, &heartbeatHeader_attr);
 	SEGGER_RTT_WriteString(0, "Init heartbeat task\r\n");
 }
 

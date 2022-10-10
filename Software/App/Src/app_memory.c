@@ -10,6 +10,7 @@ const osThreadAttr_t memoryHeader_attr = {
 };
 
 SPI_HandleTypeDef memory_hspi2;
+memory_t* memory;
 
 void initMemoryTask(SPI_HandleTypeDef hspi2) {
 	memory_hspi2 = hspi2;
@@ -19,12 +20,16 @@ void initMemoryTask(SPI_HandleTypeDef hspi2) {
 }
 
 __NO_RETURN void memoryTask() {
+	memory_init(memory, SPI2_CS_MEMORY_GPIO_Port, SPI2_CS_MEMORY_Pin, &memory_hspi2);
 
-	memory_init(SPI2_CS_MEMORY_GPIO_Port, SPI2_CS_MEMORY_Pin, &memory_hspi2);
+	//TODO: trouver un moyen d'aller chercher l'information dans _rocketdata surement juste caller une fonction, ensuite doit parser les floats en array de bytes
 
 	while(1) {
 
-		send_command();
+		if(memory->initialized != 0) {
+			continue;
+		}
+
 		osDelay(20);
 	}
 }
