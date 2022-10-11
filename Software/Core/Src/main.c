@@ -348,7 +348,8 @@ static void MX_GPIO_Init(void)
                           |LED_4_Pin|SENSE_2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, SPI2_CS_MEMORY_Pin|HOLD_Pin|CS_Pin|LED_1_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, TEST_F446_DEV_BOARD_SPI2_Pin|SPI2_CS_MEMORY_Pin|HOLD_Pin|CS_Pin
+                          |LED_1_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(FIRE_1_GPIO_Port, FIRE_1_Pin, GPIO_PIN_RESET);
@@ -369,8 +370,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : SPI2_CS_MEMORY_Pin HOLD_Pin CS_Pin LED_1_Pin */
-  GPIO_InitStruct.Pin = SPI2_CS_MEMORY_Pin|HOLD_Pin|CS_Pin|LED_1_Pin;
+  /*Configure GPIO pins : TEST_F446_DEV_BOARD_SPI2_Pin SPI2_CS_MEMORY_Pin HOLD_Pin CS_Pin
+                           LED_1_Pin */
+  GPIO_InitStruct.Pin = TEST_F446_DEV_BOARD_SPI2_Pin|SPI2_CS_MEMORY_Pin|HOLD_Pin|CS_Pin
+                          |LED_1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

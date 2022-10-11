@@ -78,8 +78,8 @@ all: main-build
 main-build: Software.elf secondary-outputs
 
 # Tool invocations
-Software.elf Software.map: $(OBJS) $(USER_OBJS) F:\Workspace\mini-rockets\Software\STM32F405RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Software.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"F:\Workspace\mini-rockets\Software\STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Software.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Software.elf Software.map: $(OBJS) $(USER_OBJS) C:\Users\user\Desktop\Workspace\mini-rockets\Software\STM32F405RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Software.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\user\Desktop\Workspace\mini-rockets\Software\STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Software.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

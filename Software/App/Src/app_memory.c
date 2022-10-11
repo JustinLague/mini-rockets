@@ -6,7 +6,7 @@
 
 const osThreadAttr_t memoryHeader_attr = {
   .priority = (osPriority_t) osPriorityNormal, //Set initial thread priority to high
-  .stack_size = 2048
+  .stack_size = 512
 };
 
 SPI_HandleTypeDef memory_hspi2;
@@ -20,7 +20,10 @@ void initMemoryTask(SPI_HandleTypeDef hspi2) {
 }
 
 __NO_RETURN void memoryTask() {
-	memory_init(memory, SPI2_CS_MEMORY_GPIO_Port, SPI2_CS_MEMORY_Pin, &memory_hspi2);
+	//TODO: THIS SHOULD WORK ON STM32F405
+	//memory_init(&memory, SPI2_CS_MEMORY_GPIO_Port, SPI2_CS_MEMORY_Pin, &memory_hspi2);
+
+	memory_init(&memory, TEST_F446_DEV_BOARD_SPI2_GPIO_Port, TEST_F446_DEV_BOARD_SPI2_Pin, &memory_hspi2);
 
 	//TODO: trouver un moyen d'aller chercher l'information dans _rocketdata surement juste caller une fonction, ensuite doit parser les floats en array de bytes
 

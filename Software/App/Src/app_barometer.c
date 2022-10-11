@@ -6,7 +6,7 @@
 
 const osThreadAttr_t barometerHeader_attr = {
   .priority = (osPriority_t) osPriorityHigh, //Set initial thread priority to high
-  .stack_size = 2048
+  .stack_size = 1024
 };
 
 barometer_t barometer;

@@ -65,6 +65,8 @@ void Error_Handler(void);
 #define INT2_GPIO_Port GPIOC
 #define INT1_Pin GPIO_PIN_5
 #define INT1_GPIO_Port GPIOC
+#define TEST_F446_DEV_BOARD_SPI2_Pin GPIO_PIN_1
+#define TEST_F446_DEV_BOARD_SPI2_GPIO_Port GPIOB
 #define SPI2_CS_MEMORY_Pin GPIO_PIN_11
 #define SPI2_CS_MEMORY_GPIO_Port GPIOB
 #define HOLD_Pin GPIO_PIN_13

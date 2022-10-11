@@ -6,7 +6,7 @@
 
 const osThreadAttr_t buzzerHeader_attr = {
   .priority = (osPriority_t) osPriorityNormal, //Set initial thread priority to high
-  .stack_size = 1024
+  .stack_size = 128
 };
 
 int iBuzzerMode = 3;

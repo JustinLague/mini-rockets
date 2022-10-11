@@ -5,7 +5,7 @@
 
 const osThreadAttr_t heartbeatHeader_attr = {
   .priority = (osPriority_t) osPriorityIdle, //Set initial thread priority to high
-  .stack_size = 512
+  .stack_size = 128
 };
 
 

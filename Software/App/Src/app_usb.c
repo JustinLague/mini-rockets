@@ -5,7 +5,7 @@
 
 const osThreadAttr_t usbHeader_attr = {
   .priority = (osPriority_t) osPriorityNormal, //Set initial thread priority to high
-  .stack_size = 1024
+  .stack_size = 128
 };
 
 

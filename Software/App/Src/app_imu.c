@@ -5,7 +5,7 @@
 
 const osThreadAttr_t imuHeader_attr = {
   .priority = (osPriority_t) osPriorityNormal, //Set initial thread priority to high
-  .stack_size = 2048
+  .stack_size = 128
 };
 
 

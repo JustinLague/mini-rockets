@@ -9,7 +9,7 @@
 
 const osThreadAttr_t mainHeader_attr = {
   .priority = (osPriority_t) osPriorityNormal, //Set initial thread priority to high
-  .stack_size = 4096
+  .stack_size = 1024
 };
 
 //Calibration stuff
