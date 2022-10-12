@@ -90,22 +90,13 @@ const Table = ({ hoveredItem, setTimestamp, timestamp }) => {
                             <tbody>
                                 <tr>
                                     <td>
-                                        <code>
-                                            {hoveredItem?.agX?.toFixed(2) ?? 0} m/s
-                                            <sup>2</sup>
-                                        </code>
+                                        <code>{hoveredItem?.agX?.toFixed(2) ?? 0} m/s</code>
                                     </td>
                                     <td>
-                                        <code>
-                                            {hoveredItem?.agY?.toFixed(2) ?? 0} m/s
-                                            <sup>2</sup>
-                                        </code>
+                                        <code>{hoveredItem?.agY?.toFixed(2) ?? 0} m/s</code>
                                     </td>
                                     <td>
-                                        <code>
-                                            {hoveredItem?.agZ?.toFixed(2) ?? 0} m/s
-                                            <sup>2</sup>
-                                        </code>
+                                        <code>{hoveredItem?.agZ?.toFixed(2) ?? 0} m/s</code>
                                     </td>
                                 </tr>
                             </tbody>
