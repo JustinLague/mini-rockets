@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import GraphVitAcc from './GraphVitAcc';
-import GraphAlPreTem from './GraphAlPreTem';
 import Nav from './Nav';
 
 function Router() {
@@ -13,11 +12,6 @@ function Router() {
                         <GraphVitAcc />
                     </Nav>
                 }/>
-                <Route path="alPreTem" element={
-                    <Nav>
-                        <GraphAlPreTem />
-                    </Nav>
-                } />
             </Routes>
         </BrowserRouter>
     </div>
