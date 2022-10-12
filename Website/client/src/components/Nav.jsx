@@ -10,7 +10,7 @@ const linkStyle = {
 function Nav(props) {
   return (
     <React.Fragment>
-        <Box display="flex" sx={{ bgcolor: "lightGray", p:1}}>
+        {/* <Box display="flex" sx={{ bgcolor: "lightGray", p:1}}>
             <Link to="/alPreTem" style={linkStyle}>
                 <ListItemButton>
                     <ListItemText primary="Pression Altitude Temperature" />
@@ -21,7 +21,7 @@ function Nav(props) {
                     <ListItemText primary="Acceleration Vitesse" />
                 </ListItemButton>
             </Link>
-        </Box>
+        </Box> */}
         <Box sx={{p: 2}}>
             { props.children }
         </Box>
