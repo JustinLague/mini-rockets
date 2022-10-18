@@ -43,3 +43,26 @@
 
 # Libraries
 /lib
+# eclipse specific git ignore
+.metadata/
+RemoteSystemsTempFiles/
+Debug/
+/Debug
+*.launch
+
+# Binaries
+build/
+bin/
+*.o
+*.elf
+*.elf.launch
+*.hex
+*.bin
+*.map
+
+# VS Code
+.vscode/
+*.d
+*.su
+*.mk
+.settings/language.settings.xml

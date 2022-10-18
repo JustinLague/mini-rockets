@@ -2,10 +2,7 @@
 #include "memory.h"
 #include "SEGGER_RTT.h"
 
-SPI_HandleTypeDef memory_spi;
-
 osSemaphoreId_t received_read_data;
-
 
 void memory_init(memory_t* memory, GPIO_TypeDef* port, uint16_t pin, SPI_HandleTypeDef* spi) {
 
@@ -17,6 +14,10 @@ void memory_init(memory_t* memory, GPIO_TypeDef* port, uint16_t pin, SPI_HandleT
 	memory->current_memory[2] = 0x00;
 	memory->initialized = 0;
 
+	//Need this to be high for the memory to read/write
+	//TODO: check the chip enable pin to be set to high at all time for the memory to work
+	HAL_GPIO_WritePin(HOLD_GPIO_Port,  HOLD_Pin, GPIO_PIN_SET);
+
 	received_read_data = osSemaphoreNew(1, 0, NULL);
 
 	finding_start_memory(memory);
@@ -26,7 +27,7 @@ void memory_init(memory_t* memory, GPIO_TypeDef* port, uint16_t pin, SPI_HandleT
 
 void finding_start_memory(memory_t* memory) {
 	uint8_t tx[5] = { HS_READ_CMD, 0x00, 0x00, 0x00 };
-	uint8_t rx[64];
+	uint8_t rx[64] = { 0x00 };
 
 	uint8_t continue_reading = 1;
 	uint32_t increment_counter = 0;
@@ -37,9 +38,14 @@ void finding_start_memory(memory_t* memory) {
 	//might need hold here need to test if I dont skip some bits when reading the whole 64 bits
 
 	while(continue_reading) {
+		//unHold the spi read
+		HAL_GPIO_WritePin(HOLD_GPIO_Port,  HOLD_Pin, GPIO_PIN_SET);
+
+		//TODO: HARD FAULTS ON DEV BOARD
 		HAL_SPI_Receive_IT(memory->spi, rx, 64);
 		osSemaphoreAcquire(received_read_data, osWaitForever);
 
+		//keep track of where we are in memory, this is useful to know where to start the write operation in the memory
 		increment_counter++;
 
 		if((rx[0] | JUSTIN_ID) != JUSTIN_ID) {
@@ -74,7 +80,7 @@ void read_status_register(memory_t* memory) {
 	uint8_t rx[1] = { 0x0 };
 
 	HAL_GPIO_WritePin(memory->port, memory->pin, GPIO_PIN_RESET);
-	HAL_SPI_Transmit(memory->spi, tx, 1, 100);
+ 	HAL_SPI_Transmit(memory->spi, tx, 1, 100);
 	HAL_SPI_Receive(memory->spi, rx, 1, 100);
 	HAL_GPIO_WritePin(memory->port, memory->pin, GPIO_PIN_SET);
 }
@@ -145,6 +151,8 @@ void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef * hspi) {
 
 // Interrupt Rx
 void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef * hspi) {
+	//Hold the spi read
+	HAL_GPIO_WritePin(HOLD_GPIO_Port,  HOLD_Pin, GPIO_PIN_RESET);
 	osSemaphoreRelease(received_read_data);
 }
 
