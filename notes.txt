@@ -1,28 +1,80 @@
-MCU:
-	STM32F405RTG6: https://pdf1.alldatasheet.com/datasheet-pdf/view/510007/STMICROELECTRONICS/STM32F405RGT6.html
+composant linear:
 
-Memory:
-	SST25VF512A-33-4C-SAE: https://www.digikey.com/en/products/detail/microchip-technology/SST25VF512A-33-4C-SAE/2297812
+RLC
 
-Altimetre:
-	MS5607-02BA03: https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5607-02BA03&DocType=Data+Sheet&DocLang=English
+courbe X: tension (V)
+	   Y : Courant (A)
 
-Geroscope, accelerometre, temperature:
-	LSM6DS3: https://www.st.com/resource/en/datasheet/lsm6dso.pdf
+composant non linear :
 
-	https://www.digikey.ca/en/products/detail/stmicroelectronics/LSM6DSLTR/6192804
+pas mal tout le reste
 
-Battery port: 
-	1716020000: https://www.digikey.com/en/products/detail/weidm%C3%BCller/1716020000/269780
+petit changement de Tension >>> courant 
 
-Buck: 
-	ADP2303ARDZ-3.3-R7: https://www.digikey.ca/en/products/detail/analog-devices-inc/ADP2303ARDZ-3-3-R7/2606545
+V=RI ne fonctionne pas 
 
-Programmeur port: 
-	GRPB052MWCN-RC: https://www.digikey.ca/en/products/detail/sullins-connector-solutions/GRPB052MWCN-RC/1786482?s=N4IgTCBcDaIMoE4AMBGA7AUQLRIKxYDkAREAXQF8g
+	faut faire une circuit equivalant lineaire
 
-Reset Switch:
-	MJTP1117: https://www.digikey.com/en/products/detail/apem-inc/MJTP1117/1795496
+
+LDO : low noise, pas efficace (Tension ++ -> Tension--)
+
+Buck : tension-- -> tension++
+
+Boost: tension-- -> tension++
+
+
+bobine opposer de condencateur
+
+
+Bobine marche en courant (magnetique) change la tension
+
+Condencateur marche en tension (electrique) change le courant
+
+
+entree mecanique = condencateur 
+
+truc de mcu boot option =
+
+	pull up : donne 1 ou 0 dependant de la resistance : https://ohmslawcalculator.com/voltage-divider-calculator
+
+selection filter is the key to win 
+
+Layer stack manager
+
+	mettre 2 et 3 en plane 
+
+4 couches typiques pour circuit numeriques
+
+	1 et 4 couche contiens les signaux de mcu resistance etc
+	2 ground
+	3 power (possibiliter d'avoir des iles de power genre 3v3 mcu et 3v3 imu et 5v, peut pas faire ca en plane)
+
+TC => trouver le fil / composant dans la vue 
+
+L dans la view pcb => voir les filtres des layers
+shift + c => clear
+
+shift + s => tu vois tout ce qui se passe dans la layer
+
+
+grossir un fil : pert moins de tension
+ 				 change l'inpedance 
+
+inpedance de 50 ohm
+
+saturn pcb => conductor properties 
+
+checker la grosseur de la ligne avec saturn conductor properties pour savoir si ca pas pogner en feu
+
+
+plan electrique du rasberypie 
+plan electrique du arduino uno
+plan electrique du beagle bone
+
+
+
+
+
 
 DP => Data plus
 DM => Data moins
